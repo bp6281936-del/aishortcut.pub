@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aishortcut</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS is loaded via CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #1e293b; /* Dark text color */
+        }
+        .shortcut-key {
+            background: linear-gradient(135deg, #60a5fa, #3b82f6); /* Blue gradient */
+            color: white;
+            padding: 0.5rem 0.75rem;
+            border-radius: 9999px; /* Pill shape */
+            font-weight: 700;
+            min-width: 2rem;
+            display: inline-block;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .shortcut-card:hover .shortcut-key {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-3xl font-bold text-gray-900">
+                Aishortcut
+            </div>
+            <nav>
+                <a href="#shortcuts" class="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-200">Shortcuts</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-cyan-500 to-blue-600 text-white py-24 px-4 text-center">
+        <div class="container mx-auto">
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-4 drop-shadow-md">
+                Master the Web with Shortcuts
+            </h1>
+            <p class="text-lg md:text-xl font-light mb-8 max-w-2xl mx-auto opacity-90">
+                Discover the coolest keyboard shortcuts for your favorite websites to save time and boost productivity.
+            </p>
+        </div>
+    </section>
+
+    <!-- Shortcuts Section -->
+    <section id="shortcuts" class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">
+                Essential Shortcuts
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- YouTube Shortcuts Card -->
+                <div class="shortcut-card bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <img src="https://placehold.co/40x40/FF0000/FFFFFF?text=YT" alt="YouTube Icon" class="rounded-full">
+                        <h3 class="text-2xl font-semibold text-gray-800">YouTube</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <span class="shortcut-key">K</span>
+                            <p class="ml-4 text-gray-700">Play/Pause the video</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="shortcut-key">M</span>
+                            <p class="ml-4 text-gray-700">Mute/Unmute the audio</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="shortcut-key">F</span>
+                            <p class="ml-4 text-gray-700">Toggle fullscreen mode</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="shortcut-key">J</span>
+                            <p class="ml-4 text-gray-700">Rewind 10 seconds</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="shortcut-key">L</span>
+                            <p class="ml-4 text-gray-700">Fast-forward 10 seconds</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="shortcut-key">.</span>
+                            <p class="ml-4 text-gray-700">Step to the next frame</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="shortcut-key">,</span>
+                            <p class="ml-4 text-gray-700">Step to the previous frame</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Instagram Shortcuts Card -->
+                <div class="shortcut-card bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <img src="https://placehold.co/40x40/E4405F/FFFFFF?text=IG" alt="Instagram Icon" class="rounded-full">
+                        <h3 class="text-2xl font-semibold text-gray-800">Instagram</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <span class="shortcut-key">J</span>
+                            <p class="ml-4 text-gray-700">Scroll to the next post</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="shortcut-key">K</span>
+                            <p class="ml-4 text-gray-700">Scroll to the previous post</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="shortcut-key">L</span>
+                            <p class="ml-4 text-gray-700">Like the current post</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="shortcut-key">N</span>
+                            <p class="ml-4 text-gray-700">Open a new post creator</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Facebook Shortcuts Card -->
+                <div class="shortcut-card bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <img src="https://placehold.co/40x40/1877F2/FFFFFF?text=FB" alt="Facebook Icon" class="rounded-full">
+                        <h3 class="text-2xl font-semibold text-gray-800">Facebook</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <span class="shortcut-key">J</span>
+                            <p class="ml-4 text-gray-700">Scroll to the next post</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="shortcut-key">K</span>
+                            <p class="ml-4 text-gray-700">Scroll to the previous post</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="shortcut-key">P</span>
+                            <p class="ml-4 text-gray-700">Open photo viewer</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="shortcut-key">/</span>
+                            <p class="ml-4 text-gray-700">Open search</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="shortcut-key">N</span>
+                            <p class="ml-4 text-gray-700">Create a new post</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Twitter (X) Shortcuts Card -->
+                <div class="shortcut-card bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <img src="https://placehold.co/40x40/000000/FFFFFF?text=X" alt="X Icon" class="rounded-full">
+                        <h3 class="text-2xl font-semibold text-gray-800">Twitter (X)</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <span class="shortcut-key">J</span>
+                            <p class="ml-4 text-gray-700">Scroll to the next tweet</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="shortcut-key">K</span>
+                            <p class="ml-4 text-gray-700">Scroll to the previous tweet</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="shortcut-key">L</span>
+                            <p class="ml-4 text-gray-700">Like a tweet</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="shortcut-key">N</span>
+                            <p class="ml-4 text-gray-700">Compose a new tweet</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="shortcut-key">.</span>
+                            <p class="ml-4 text-gray-700">Load new tweets</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Spotify Shortcuts Card -->
+                <div class="shortcut-card bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <img src="https://placehold.co/40x40/1DB954/FFFFFF?text=S" alt="Spotify Icon" class="rounded-full">
+                        <h3 class="text-2xl font-semibold text-gray-800">Spotify</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <span class="shortcut-key">Space</span>
+                            <p class="ml-4 text-gray-700">Play/Pause current song</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="shortcut-key">Ctrl+Right</span>
+                            <p class="ml-4 text-gray-700">Next song</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="shortcut-key">Ctrl+Left</span>
+                            <p class="ml-4 text-gray-700">Previous song</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="shortcut-key">Ctrl+Up</span>
+                            <p class="ml-4 text-gray-700">Increase volume</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="shortcut-key">Ctrl+Down</span>
+                            <p class="ml-4 text-gray-700">Decrease volume</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Reddit Shortcuts Card -->
+                <div class="shortcut-card bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <img src="https://placehold.co/40x40/FF5700/FFFFFF?text=R" alt="Reddit Icon" class="rounded-full">
+                        <h3 class="text-2xl font-semibold text-gray-800">Reddit</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <span class="shortcut-key">J</span>
+                            <p class="ml-4 text-gray-700">Go to the next post</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="shortcut-key">K</span>
+                            <p class="ml-4 text-gray-700">Go to the previous post</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="shortcut-key">A</span>
+                            <p class="ml-4 text-gray-700">Upvote a post or comment</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="shortcut-key">Z</span>
+                            <p class="ml-4 text-gray-700">Downvote a post or comment</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="shortcut-key">C</span>
+                            <p class="ml-4 text-gray-700">Comment on a post</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="shortcut-key">R</span>
+                            <p class="ml-4 text-gray-700">Reply to a comment</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2025 Aishortcut. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
